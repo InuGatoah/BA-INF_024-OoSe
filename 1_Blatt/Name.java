@@ -29,7 +29,7 @@ public class Name {
                 System.out.println(a / b);
                 break;
             default:
-                System.out.println("Kein gültiger Operant");
+                System.out.println("Kein gueltiger Operant");
         }
     }
 }
