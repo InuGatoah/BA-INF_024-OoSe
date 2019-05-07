@@ -34,6 +34,8 @@ class No4 {
             if(anzahl<50) {
                 schiffe[anzahl] = schiff;
                 anzahl++;
+            } else{
+                System.out.println("Schiff kann nicht regestriert werden, zu viele Schiffe sind regestriert");
             }
         }
         public void meldung(String nachricht, int dringlichkeit) {
@@ -57,7 +59,7 @@ class No4 {
         public void produziereSchiff(String name, double laenge, Schifffahrtsamt amt) {
             Schiff schiff = new Schiff(name, laenge);
                 amt.add(schiff);
-//schiff.setKennzeichen(amt.getKennzeichen());
+                schiff.setKennzeichen(Schifffahrtsamt.getKennzeichen());
         }
     }
   public static void main(String[] args) {
